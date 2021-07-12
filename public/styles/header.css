@@ -1,0 +1,32 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Additional CSS */
+header {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d49a37;
+  background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
+  z-index:1;
+}
+
+.avatar {
+  padding-top: 20px;
+}
+
+.username h2 {
+  margin-top: 0px;  
+}
+

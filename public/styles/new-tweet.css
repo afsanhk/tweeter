@@ -1,0 +1,57 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Additional CSS */
+
+/* The space means descendent. No space means 2 classes of the same tag. */
+.container .new-tweet h2 {
+  margin-bottom: 0px;
+}
+
+.container .new-tweet form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+ /* Default styling */
+.container .new-tweet form #tweet-text{
+  display: flex;
+  background-color: transparent;
+  border: gray 5px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  font-weight: 600;
+  height: 65px;
+  padding-top: 15px;
+}
+
+/* IF CHARACTERS ABOVE 140 */
+.container .new-tweet form div .error-tweet-text {
+  color:red;
+}
+
+.container .new-tweet form div{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+  margin-top: 10px;
+}
+
+.container .new-tweet form div button{
+  background-color: #4056A1;
+  color: white;
+  justify-content: space-between;
+}
+
+
