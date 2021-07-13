@@ -48,8 +48,12 @@ $(document).ready(function() {
   };
 
   // 3. Gets JSON from /tweets and renders tweets using the parsed data.
-  $.getJSON('/tweets', function(data) {
-    renderTweets(data);
-  });
+  const loadtweets = function() {
+    $.getJSON('/tweets', function(data) {
+      renderTweets(data);
+    });
+  }
   
+  loadtweets();
+
 });
