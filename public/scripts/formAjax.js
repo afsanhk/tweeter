@@ -1,9 +1,7 @@
 $(document).ready(function () {
-
   $('.new-tweet').children('form').on('submit', function(event) {
     event.preventDefault();
-    console.log('Default action prevented!')
-  })
-
-
+    const tweetContent = ($(this).serialize()); //$(this).serialize() is whatever is typed into the form!
+    $.post('/tweets', tweetContent);
+  });
 });

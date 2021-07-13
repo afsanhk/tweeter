@@ -1,7 +1,5 @@
 $(document).ready(function() {
   
-  console.log('Composer Character Counter Script Is Ready');
-  
   $("#tweet-text").on('input', function() { // Use input instead of keyup/down/press because it counts copy/paste.
     // Note: $(this) selects #tweet-area as the 'target' for our methods
     let charCount = $(this).val().length; // $(this).val().length --> .val() returns what is inside the text area and .length returns the length i.e characters entered.
