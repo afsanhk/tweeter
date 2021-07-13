@@ -12,21 +12,22 @@
 
 /* Additional CSS */
 
+/* Full tweet box properties (contains the article) */
 .container #allTweets {
   display: flex;
-  background-color: violet;
   border-style: solid;
   padding: 10px;
   height: 150px;
 }
 
+/* Article (header + body + footer) rules and alignment */
 .container #allTweets article {
   display:flex;
   flex-direction: column;
   width:100%;
 }
 
-
+/* Full header properties */
 .container #allTweets article header {
   display: flex;
   width: 100%;
@@ -38,6 +39,7 @@
   padding-left: 10px;
 }
 
+/* Aligning header containers to be top of the header */
 .container #allTweets article header div {
   align-self: flex-start;
 }
@@ -46,6 +48,7 @@
   align-self: flex-start;
 }
 
+/* Main tweet body */
 .container #allTweets article p {
   display: flex;
   width: 100%;
@@ -57,6 +60,7 @@
   padding-bottom: 15px;
 }
 
+/* Full footer property */
 .container #allTweets article footer {
   display: flex;
   width: 100%;
@@ -67,6 +71,8 @@
   font-size: 15px;
 }
 
+
+/* Timestamp footer with margin above within the footer */
 .container #allTweets article footer span {
   margin-top: 5px;  
 }
