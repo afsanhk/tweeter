@@ -15,8 +15,7 @@
 /* Full tweet box properties (contains the article) */
 .container #allTweets {
   display: flex;
-  border-style: solid;
-  padding: 10px;
+  flex-direction: column;
   height: 180px;
 }
 
@@ -25,6 +24,9 @@
   display:flex;
   flex-direction: column;
   width:100%;
+  border-style:solid;
+  padding: 10px;
+  margin-bottom: 50px;
 }
 
 /* Full header properties */
@@ -113,6 +115,6 @@
 }
 
 /* Tweet Box */
-.container #allTweets:hover{
+.container #allTweets article.tweet:hover{
   box-shadow: grey 5px 5px;
 }
