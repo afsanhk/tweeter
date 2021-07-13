@@ -35,7 +35,6 @@
   flex-direction: row;
   justify-content: space-between;
   background-image: unset;
-  background-color: transparent; /* Overrides the header background iamge from header.css */
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 20px;

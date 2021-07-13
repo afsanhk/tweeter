@@ -25,6 +25,10 @@
  /* Default styling */
 .container .new-tweet form #tweet-text{
   display: flex;
+  background-color: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
   border-bottom: gray 5px;
   border-style: solid;
   font-weight: 600;
@@ -50,5 +54,3 @@
   color: white;
   justify-content: space-between;
 }
-
-
