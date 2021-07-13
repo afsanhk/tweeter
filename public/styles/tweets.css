@@ -21,14 +21,14 @@
 }
 
 /* Article (header + body + footer) rules and alignment */
-.container #allTweets article {
+.container #allTweets article.tweet {
   display:flex;
   flex-direction: column;
   width:100%;
 }
 
 /* Full header properties */
-.container #allTweets article header {
+.container #allTweets article.tweet header {
   display: flex;
   width: 100%;
   height: 40px;
@@ -43,7 +43,7 @@
 }
 
 /* Avatar styling */
-.container #allTweets article header div img {
+.container #allTweets article.tweet header div img {
   display: flex;
   max-width:40px;
   max-height:40px;
@@ -54,19 +54,19 @@
 /* Header containers */
 
 /* Div containing image and name */
-.container #allTweets article header div {
+.container #allTweets article.tweet header div {
   display: flex;
   flex-direction: row;
   align-self: center;
 }
 
 /* Spans with name and username */
-.container #allTweets article header span {
+.container #allTweets article.tweet header span {
   align-self: center;
 }
 
 /* Username */
-.container #allTweets article header .username{
+.container #allTweets article.tweet header .username{
   height: 40px;
   font-style: bold;
   color: lightgray;
@@ -74,7 +74,7 @@
 
 
 /* Main tweet body */
-.container #allTweets article p {
+.container #allTweets article.tweet p {
   display: flex;
   width: 100%;
   height: 85px;
@@ -89,7 +89,7 @@
 }
 
 /* Full footer property */
-.container #allTweets article footer {
+.container #allTweets article.tweet footer {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -101,14 +101,14 @@
 
 
 /* Timestamp footer with margin above within the footer */
-.container #allTweets article footer span {
+.container #allTweets article.tweet footer span {
   margin-top: 5px;  
 }
 
 
 /* Hover Effects */
 /* Icons */
-.container #allTweets article footer div .fas:hover {
+.container #allTweets article.tweet footer div .fas:hover {
   color: orange;
 }
 
