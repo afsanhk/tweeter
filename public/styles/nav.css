@@ -12,6 +12,8 @@
 
 
 /* Additional CSS */
+
+/* Navbar  */
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,12 +24,14 @@ nav {
   
 }
 
+/* App name design */
 #tweeterTitle {
   display:flex;
   font-family: 'Bungee', sans-serif;
   margin-left: 1.5em;
 }
 
+/* Write a tweet in navbar */
 #writeTweet {
   display: flex;
   flex-direction: column;
@@ -36,6 +40,15 @@ nav {
   margin-right: 1.5em;
 }
 
+/* Double arrow */
 .fas.fa-angle-double-down {
   color:red;
+}
+
+/* Source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position. Did not add a JS script for this. */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
