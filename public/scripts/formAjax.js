@@ -14,6 +14,7 @@ $(document).ready(function () {
       return;
     } else {  // 3) Otherwise, post.
       $.post('/tweets', tweetContent); // This is AJAX shorthand in jQuery
+      // I think additional code will go here for this feature.
     }
     
   });
