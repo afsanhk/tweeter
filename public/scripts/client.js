@@ -43,7 +43,7 @@ $(document).ready(function() {
     $('#allTweets').html(''); // Clears default text
     for (let key in tweets) { // loops through tweets
       $tweet = createTweetElement(tweets[key]); // calls createTweetElement for each tweet
-      $('#allTweets').append($tweet); // takes return value and appends it to the tweets container
+      $('#allTweets').prepend($tweet); // takes return value and prepends (ensures order) it to the tweets container
     }
   };
 
