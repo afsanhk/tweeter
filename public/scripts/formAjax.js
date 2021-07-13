@@ -13,9 +13,10 @@ $(document).ready(function () {
       alert('Please make sure to write something!')
       return;
     } else {  // 3) Otherwise, post.
-      $.post('/tweets', tweetContent); // This is AJAX shorthand in jQuery
-      // I think additional code will go here for this feature.
+      $.post('/tweets', tweetContent, function () { // This is AJAX shorthand in jQuery to post.
+        $('.new-tweet').children('form')[0].reset(); // Clears the form - source: https://stackoverflow.com/questions/10633605/clear-form-values-after-submission-ajax
+        $.getScript('/scripts/client.js'); // AJAX shorthand to get a script - runs tweet loading script again.
+      }); 
     }
-    
   });
 });
