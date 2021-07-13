@@ -49,7 +49,7 @@ $(document).ready(function() {
 
   // 3. Gets JSON from /tweets and renders tweets using the parsed data.
   const loadtweets = function() {
-    $.getJSON('/tweets', function(data) {
+    $.getJSON('/tweets', function(data) { // jQuery shorthand for Ajax
       renderTweets(data);
     });
   }
