@@ -46,6 +46,7 @@
   justify-content: space-between;
   font-family: 'Bungee', sans-serif;
   margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .container .new-tweet form div button{

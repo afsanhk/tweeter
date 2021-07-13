@@ -16,7 +16,6 @@
   display: flex;
   background-color: violet;
   border-style: solid;
-  margin-top: 50px;
   padding: 10px;
   height: 150px;
 }
@@ -72,3 +71,14 @@
   margin-top: 5px;  
 }
 
+
+/* Hover Effects */
+/* Icons */
+.container #allTweets article footer div .fas:hover {
+  color: orange;
+}
+
+/* Tweet Box */
+.container #allTweets:hover{
+  box-shadow: grey 5px 5px;
+}
