@@ -17,7 +17,7 @@
   display: flex;
   border-style: solid;
   padding: 10px;
-  height: 210px;
+  height: 180px;
 }
 
 /* Article (header + body + footer) rules and alignment */
@@ -31,6 +31,7 @@
 .container #allTweets article header {
   display: flex;
   width: 100%;
+  height: 40px;
   flex-direction: row;
   justify-content: space-between;
   background-image: unset;
@@ -38,6 +39,7 @@
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 /* Avatar styling */
@@ -71,7 +73,6 @@
 }
 
 
-
 /* Main tweet body */
 .container #allTweets article p {
   display: flex;
@@ -80,6 +81,7 @@
   border-bottom: solid;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-top: 20px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 15px;
