@@ -1,0 +1,74 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Additional CSS */
+
+.container #allTweets {
+  display: flex;
+  background-color: violet;
+  border-style: solid;
+  margin-top: 50px;
+  padding: 10px;
+  height: 150px;
+}
+
+.container #allTweets article {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+}
+
+
+.container #allTweets article header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-between;
+  background-image: unset;
+  background-color: transparent; /* Overrides the header background iamge from header.css */
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.container #allTweets article header div {
+  align-self: flex-start;
+}
+
+.container #allTweets article header span {
+  align-self: flex-start;
+}
+
+.container #allTweets article p {
+  display: flex;
+  width: 100%;
+  border-bottom: solid;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.container #allTweets article footer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.container #allTweets article footer span {
+  margin-top: 5px;  
+}
+
