@@ -13,15 +13,15 @@ $(document).ready(function() {
     const $articleHeader = $('<header>'); // Set article header tag
     const $articleHeaderDiv = $('<div>'); // Set div in article header
     const $headerAvatar = $('<img class="image">').attr('src', data.user.avatars); // Set image tag with avatar
-    const $headerName = $('<span class="name">').html(data.user.name);
-    const $headerHandle = $('<span class="username">').html(data.user.handle);
+    const $headerName = $('<span class="name">').text(data.user.name); // Use .text instead of .html to prevent XSS.
+    const $headerHandle = $('<span class="username">').text(data.user.handle);
 
     // Append Header Tags
     $articleHeaderDiv.append($headerAvatar).append($headerName);
     $articleHeader.append($articleHeaderDiv).append($headerHandle);
 
     // Tweet Body
-    const $tweetBody = $('<p>').html(data.content.text);
+    const $tweetBody = $('<p>').text(data.content.text); 
 
     // Article Footer
     const $articleFooter = $('<footer>');

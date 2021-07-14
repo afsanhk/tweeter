@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.new-tweet').children('form').on('submit', function(event) {
     event.preventDefault();
-    const tweetContent = ($(this).serialize()); //$(this).serialize() is whatever is typed into the form!
+    const tweetContent = ($(this).serialize()); //$(this).serialize() is fieldname=formcontent.
     const tweetText = tweetContent.replace('text=',''); // TweetContent without the fieldname
     const maxLength = 140; 
 
@@ -12,8 +12,8 @@ $(document).ready(function () {
     } else if (tweetText.length === 0) { // 2) If the form is empty, return an alert and don't post.
       alert('Please make sure to write something!')
       return;
-    } else {  // 3) Otherwise, post.
-      $.post('/tweets', tweetContent, function () { // This is AJAX shorthand in jQuery to post.
+    } else { // 3) Otherwise, post.
+      $.post('/tweets', tweetContent, function () { // AJAX shorthand in jQuery to post.
         $('.new-tweet').children('form')[0].reset(); // Clears the form - source: https://stackoverflow.com/questions/10633605/clear-form-values-after-submission-ajax
         $.getScript('/scripts/client.js'); // AJAX shorthand to get a script - runs tweet loading script again.
       }); 
