@@ -70,7 +70,7 @@
 .container #allTweets article.tweet header .username{
   height: 40px;
   font-style: bold;
-  color: lightgray;
+  color: lightsteelblue;
 }
 
 
@@ -116,5 +116,5 @@
 
 /* Tweet Box */
 .container #allTweets article.tweet:hover{
-  box-shadow: grey 5px 5px;
+  box-shadow: lightsteelblue 5px 5px;
 }

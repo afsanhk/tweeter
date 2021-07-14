@@ -52,6 +52,7 @@
   font-weight: 600;
   height: 65px;
   padding-top: 15px;
+  resize:none;
 }
 
 /* Character Counter Error */
