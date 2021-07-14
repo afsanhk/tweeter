@@ -2,12 +2,9 @@ $(document).ready(function () {
   $('.new-tweet').children('form').on('submit', function(event) {
     event.preventDefault();
     const tweetContent = ($(this).serialize()); //$(this).serialize() is fieldname=formcontent.
-    const tweetText = decodeURI(tweetContent).substr(5); // TweetContent without the fieldname & encoding %20,etc.
-    const maxLength = 140; 
-
-    console.log(tweetContent);
-    console.log(tweetText)
-    console.log(tweetText.length);
+    const tweetText = event.target.text.value; //event.target points to the form HTML element. .text points to textarea. .value returns the updated value
+    const maxLength = 140;
+    
     // Remove error (if any) - by hiding it. 
     $('.new-tweet').children('.validation-error').addClass('hidden').text(''); 
 
