@@ -11,14 +11,10 @@ $(document).ready(function() {
     // Set font color to red if more than 140 chars
     if (charCount > 140) {
       $(this).siblings('div').children('.counter').addClass('error-tweet-text'); // This style is defined in new-tweet.css and only activates when >140 chars.
-      // $(this).siblings('div').children('.counter').css("color", "red"); // This what you would use for a direct CSS change
     } else {
       $(this).siblings('div').children('.counter').removeClass('error-tweet-text'); // Class is removed and styling is back to default when <140 chars.
-      // $(this).siblings('div').children('.counter').css("color", "#545149"); // This is what you would use for a direct CSS change
     }
-
-  });
-  
+  }); 
 });
 
 
