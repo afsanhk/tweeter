@@ -5,6 +5,9 @@ $(document).ready(function () {
     const tweetText = decodeURI(tweetContent).substr(5); // TweetContent without the fieldname & encoding %20,etc.
     const maxLength = 140; 
 
+    console.log(tweetContent);
+    console.log(tweetText)
+    console.log(tweetText.length);
     // Remove error (if any) - by hiding it. 
     $('.new-tweet').children('.validation-error').addClass('hidden').text(''); 
 
