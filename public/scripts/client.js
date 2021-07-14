@@ -21,7 +21,7 @@ $(document).ready(function() {
     $articleHeader.append($articleHeaderDiv).append($headerHandle);
 
     // Tweet Body
-    const $tweetBody = $('<p>').text(data.content.text); 
+    const $tweetBody = $('<p>').text(data.content.text);
 
     // Article Footer
     const $articleFooter = $('<footer>');
@@ -52,7 +52,7 @@ $(document).ready(function() {
     $.getJSON('/tweets', function(data) { // jQuery shorthand for Ajax
       renderTweets(data);
     });
-  }
+  };
   
   loadtweets();
 
