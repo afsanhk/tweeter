@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('.new-tweet').children('form').on('submit', function(event) {
     event.preventDefault();
     const tweetContent = ($(this).serialize()); //$(this).serialize() is fieldname=formcontent.
-    const tweetText = tweetContent.replace('text=',''); // TweetContent without the fieldname
+    const tweetText = decodeURI(tweetContent).substr(5); // TweetContent without the fieldname & encoding %20,etc.
     const maxLength = 140; 
 
     // Remove error (if any) - by hiding it. 
@@ -10,13 +10,12 @@ $(document).ready(function () {
 
     // Validation Checks
     if (tweetText.length > maxLength) { // 1) If the form has more than 140 characters, return an error message and don't post.
+      
       $('.new-tweet').children('div').removeClass('hidden').text(`Please limit your tweet to ${maxLength} characters!`);
-      $('.new-tweet').prepend($div); // Prepend so it shows above the form
       return;
 
     } else if (tweetText.length === 0) { // 2) If the form is empty, return an error message and don't post.
-      $('.new-tweet').children('div').removeClass('hidden').text('Please make sure to write something!');
-      $('.new-tweet').prepend($div);
+      $('.new-tweet').children('div').removeClass('hidden').text('Please make sure to write something!');      
       return;
 
     } else { // 3) Otherwise, post.
