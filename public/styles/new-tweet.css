@@ -13,10 +13,6 @@
 /* Additional CSS */
 
 /* The space means descendent. No space means 2 classes of the same tag. */
-.container .new-tweet h2 {
-  margin-bottom: 0px;
-}
-
 .container .new-tweet form{
   display: flex;
   width: 100%;
