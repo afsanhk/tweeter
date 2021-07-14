@@ -4,19 +4,21 @@ $(document).ready(function () {
     const tweetContent = ($(this).serialize()); //$(this).serialize() is fieldname=formcontent.
     const tweetText = event.target.text.value; //event.target points to the form HTML element. .text points to textarea. .value returns the updated value
     const maxLength = 140;
-    
+
     // Remove error (if any) - by hiding it. 
-    $('.new-tweet').children('.validation-error').addClass('hidden').text(''); 
+    $('.new-tweet').children('.validation-error').text('').slideUp(); 
 
     // Validation Checks
     // 1) If the form has more than 140 characters, return an error message and don't post.
     if (tweetText.length > maxLength) { 
-      $('.new-tweet').children('div').removeClass('hidden').text(`Please limit your tweet to ${maxLength} characters!`);
+      $('.new-tweet').children('div').text(`Please limit your tweet to ${maxLength} characters!`).removeClass('hidden').slideDown();
+      
       return;
 
     // 2) If the form is empty, return an error message and don't post.  
     } else if (tweetText.length === 0) { 
-      $('.new-tweet').children('div').removeClass('hidden').text('Please make sure to write something!');      
+      $('.new-tweet').children('div').text('Please make sure to write something!').removeClass('hidden').slideDown();      
+      
       return;
 
     // 3) Otherwise, post.  
