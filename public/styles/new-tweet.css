@@ -13,12 +13,26 @@
 /* Additional CSS */
 
 /* The space means descendent. No space means 2 classes of the same tag. */
+
+/* Error Message - Validation */
+.container .new-tweet .validation-error {
+  color: red;
+  background-color: rgb(250, 234, 236);
+  border: solid red 3px;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* New Tweet Form */
 .container .new-tweet form{
   display: flex;
   width: 100%;
+  padding-top: 30px;
   flex-direction: column;
 }
- /* Default styling */
+
+ /* Default styling for form*/
 .container .new-tweet form #tweet-text{
   display: flex;
   background-color: transparent;
@@ -32,11 +46,12 @@
   padding-top: 15px;
 }
 
-/* IF CHARACTERS ABOVE 140 */
+/* Character Counter Error */
 .container .new-tweet form div .error-tweet-text {
   color:red;
 }
 
+/* Form entry area */
 .container .new-tweet form div{
   display: flex;
   justify-content: space-between;
@@ -45,6 +60,7 @@
   margin-bottom: 50px;
 }
 
+/* Form button */
 .container .new-tweet form div button{
   background-color: #4056A1;
   color: white;
