@@ -22,8 +22,9 @@ $(document).ready(function() {
     // 3) Otherwise, post.
     } else {
       $.post('/tweets', tweetContent, function() { // AJAX shorthand in jQuery to post.
-        $('.new-tweet').children('form')[0].reset(); // Clears the form.
         $.getScript('/scripts/client.js'); // AJAX shorthand to get a script - runs tweet loading script again.
+        $('.new-tweet').children('form').trigger('reset'); // Resets form
+        $('.new-tweet').children('form').children('div').children('.counter').text(`${maxLength}`); // Sets counter back to 140
       });
     }
   });
