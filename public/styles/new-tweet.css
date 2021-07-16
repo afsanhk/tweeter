@@ -12,8 +12,6 @@
 
 /* Additional CSS */
 
-/* The space means descendent. No space means 2 classes of the same tag. */
-
 /* Error Message - Validation */
 .container .new-tweet .validation-error {
   color: red;
