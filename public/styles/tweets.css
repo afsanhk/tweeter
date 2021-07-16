@@ -13,6 +13,10 @@
 /* Additional CSS */
 
 /* Full tweet box properties (contains the article) */
+
+.container {
+ margin: 2em;
+}
 .container #allTweets {
   display: flex;
   flex-direction: column;
