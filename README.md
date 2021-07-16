@@ -4,7 +4,7 @@ Tweeter is a simple, single-page Twitter clone.
 
 Built upon an existing back-end provided by LHL during the Web Dev Bootcamp to practice HTML, CSS, JS, jQuery and AJAX front-end skills.
 
-## Major learnings from this project:
+## Major Learnings:
 1. Built CSS style sheets from the ground-up.
 2. Created JS scripts, utilizing both jQuery and AJAX to modify content on the single page app.
 3. Implemented responsive design using media queries.
