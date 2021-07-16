@@ -20,6 +20,8 @@
 
 .username h2 {
   margin-top: 0px;  
+  color: #fff;
+  font-weight: 600;
 }
 
 /* Below 1024px */
