@@ -8,10 +8,35 @@ Built upon an existing back-end provided by LHL during the Web Dev Bootcamp to p
 1. Built CSS style sheets from the ground-up.
 2. Created JS scripts, utilizing both jQuery and AJAX to modify content on the single page app.
 3. Implemented responsive design using media queries.
+4. Used CDNJS to use external libraries such as timeago and fontawesome.
 
 ## Final Product
 
+### Screenshots
+* Desktop Layout
+![pic1]()
 
+* Tablet Layout
+![tabletLayout]()
+
+* Errors
+![error1]()
+![error2]()
+
+### Gifs
+* Responsive Design
+![Desktop to Tablet and back](https://media4.giphy.com/media/UteAHnyAv6GYnmxxwa/giphy.gif)
+
+* Submitting new tweet
+![submitNew](https://media0.giphy.com/media/9zX0oIbhHvobPiFfen/giphy.gif)
+
+* Error messages
+![errors](https://media4.giphy.com/media/n3cdSCcnaG2Zy8Rp1L/giphy.gif)
+
+### Other Features
+* Box shadow and icon colors change on hover.
+* Sticky navigation bar
+* Character counter
 
 ## Getting Started
 
