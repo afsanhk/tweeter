@@ -15,11 +15,12 @@
 /* The space means descendent. No space means 2 classes of the same tag. */
 
 /* Error Message - Validation */
+
+/* Below 1024 px */
 .container .new-tweet .validation-error {
   color: red;
   background-color: rgb(250, 234, 236);
   border: solid red 3px;
-  margin-top: 110px;
   padding: 10px;
   text-align: center;
 }
@@ -30,6 +31,26 @@
   margin: 0px;
   border: 0px;
   background-color: transparent;
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 1024px){
+  .container .new-tweet .validation-error {
+    color: red;
+    background-color: rgb(250, 234, 236);
+    border: solid red 3px;
+    margin-top: 110px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container .new-tweet .validation-error.hidden {
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: transparent;
+  }
 }
 
 /* New Tweet Form */

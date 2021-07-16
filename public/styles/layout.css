@@ -10,12 +10,28 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+ /* Below 1024 px */
 
 
- @media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    color: #545149;
+    background-color: #f4f1ec;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif; 
+    flex-direction: column;
+   }
+
+   .container {
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+     width: 90%;
+   }
+  
+
+ /* Desktop Layout */
+ @media only screen and (min-width: 1024px){
 
    body {
      display: flex;
@@ -23,12 +39,8 @@ html {
      background-color: #f4f1ec;
      font-size: 24px;
      font-family: 'Source Sans Pro', sans-serif; 
+     flex-direction: row;
     }
-    
-    
-    /*
-    * Additional CSS can be defined below or in other CSS files, as per instructions
-    */
     
     .container {
       display: flex;
@@ -38,4 +50,4 @@ html {
     }
     
   }
-    
+
