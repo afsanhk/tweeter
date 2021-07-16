@@ -33,13 +33,13 @@ Built upon an existing back-end provided by LHL during the Web Dev Bootcamp to p
 ![submitNew](https://media0.giphy.com/media/9zX0oIbhHvobPiFfen/giphy.gif)
 
 * Error messages
-![errors]
-(https://media4.giphy.com/media/n3cdSCcnaG2Zy8Rp1L/giphy.gif)
+
+![errors](https://media4.giphy.com/media/n3cdSCcnaG2Zy8Rp1L/giphy.gif)
 
 ### Other Features
 * Box shadow and icon colors change on hover.
-* Sticky navigation bar
-* Character counter
+* Sticky navigation bar.
+* Character counter.
 
 ## Getting Started
 
