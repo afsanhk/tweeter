@@ -20,7 +20,6 @@
 .container #allTweets {
   display: flex;
   flex-direction: column;
-  height: 180px;
 }
 
 /* Article (header + body + footer) rules and alignment */
@@ -30,7 +29,7 @@
   width:100%;
   border-style:solid;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 1em;
 }
 
 /* Full header properties */
