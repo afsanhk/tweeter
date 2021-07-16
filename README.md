@@ -14,24 +14,27 @@ Built upon an existing back-end provided by LHL during the Web Dev Bootcamp to p
 
 ### Screenshots
 * Desktop Layout
-![pic1]()
+![pic1](https://github.com/afsanhk/tweeter/blob/master/docs/desktopLayoutTweeter.png?raw=true)
 
 * Tablet Layout
-![tabletLayout]()
+![tabletLayout](https://github.com/afsanhk/tweeter/blob/master/docs/tabletLayoutTweeter.png?raw=true)
 
 * Errors
-![error1]()
-![error2]()
+![error1](https://github.com/afsanhk/tweeter/blob/master/docs/emptyError.png?raw=true)
+![error2](https://github.com/afsanhk/tweeter/blob/master/docs/over140Error.png?raw=true)
 
 ### Gifs
 * Responsive Design
+
 ![Desktop to Tablet and back](https://media4.giphy.com/media/UteAHnyAv6GYnmxxwa/giphy.gif)
 
 * Submitting new tweet
+
 ![submitNew](https://media0.giphy.com/media/9zX0oIbhHvobPiFfen/giphy.gif)
 
 * Error messages
-![errors](https://media4.giphy.com/media/n3cdSCcnaG2Zy8Rp1L/giphy.gif)
+![errors]
+(https://media4.giphy.com/media/n3cdSCcnaG2Zy8Rp1L/giphy.gif)
 
 ### Other Features
 * Box shadow and icon colors change on hover.
