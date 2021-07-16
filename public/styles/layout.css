@@ -11,8 +11,6 @@ html {
 }
 
  /* Below 1024 px */
-
-
   body {
     display: flex;
     color: #545149;
@@ -29,10 +27,8 @@ html {
      width: 90%;
    }
   
-
  /* Desktop Layout */
  @media only screen and (min-width: 1024px){
-
    body {
      display: flex;
      color: #545149;
@@ -48,7 +44,5 @@ html {
       align-self: center;
       width: 90%;
       padding-top: 100px;
-    }
-    
+    }   
   }
-
