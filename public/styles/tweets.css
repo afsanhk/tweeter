@@ -3,6 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
  html {
   box-sizing: border-box;
 }
@@ -13,7 +14,6 @@
 /* Additional CSS */
 
 /* Full tweet box properties (contains the article) */
-
 .container {
  margin: 2em;
 }
@@ -76,7 +76,6 @@
   color: lightsteelblue;
 }
 
-
 /* Main tweet body */
 .container #allTweets article.tweet p {
   display: flex;
@@ -104,12 +103,10 @@
   font-size: 15px;
 }
 
-
 /* Timestamp footer with margin above within the footer */
 .container #allTweets article.tweet footer span {
   margin-top: 5px;  
 }
-
 
 /* Hover Effects */
 /* Icons */

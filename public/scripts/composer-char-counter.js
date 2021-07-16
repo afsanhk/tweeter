@@ -14,7 +14,7 @@ $(document).ready(function() {
     } else {
       $(this).siblings('div').children('.counter').removeClass('error-tweet-text'); // Class is removed and styling is back to default when <140 chars.
     }
-  }); 
+  });
 });
 
 

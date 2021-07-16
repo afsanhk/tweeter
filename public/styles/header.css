@@ -10,7 +10,6 @@
   box-sizing: inherit;
 }
 
-
 /* Additional CSS */
 
  /* Screen Agnostic */
@@ -33,7 +32,7 @@
   background-color: #d49a37;
   background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
   z-index:1;
-  margin-top: 120px; /* Added after sticky nav was implemented - no clipping */
+  margin-top: 120px; 
 }
 
  /* Desktop Layout */
@@ -48,6 +47,6 @@
     background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
     z-index:1;
     margin: 2em;
-    margin-top: 160px; /* Added after sticky nav was implemented - no clipping */
+    margin-top: 160px; 
   }
  }

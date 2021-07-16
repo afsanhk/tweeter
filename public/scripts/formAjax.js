@@ -1,11 +1,13 @@
 $(document).ready(function() {
+
+  // Event handler for form submission
   $('.new-tweet').children('form').on('submit', function(event) {
     event.preventDefault();
-    const tweetContent = ($(this).serialize()); //$(this).serialize() is fieldname=formcontent.
-    const tweetText = event.target.text.value; //event.target points to the form HTML element after input. .text points to textarea. .value returns the updated value
+    const tweetContent = ($(this).serialize()); //$(this).serialize() converts input to fieldname=formcontent for POST-ing.
+    const tweetText = event.target.text.value; //event.target.text.value points to updated form value of HTML element after input.
     const maxLength = 140;
 
-    // Remove error (if any) - by sliding it up.
+    // Remove errors (if any) - by sliding it up.
     $('.new-tweet').children('.validation-error').text('').slideUp();
 
     // Validation Checks - error messages will slide down.
